@@ -75,7 +75,7 @@ jobs:
       on:
         all_branches: true
   - stage: goveralls
-    if: tag IS present OR commit_message !~ /(no-coverage|no-test)/
+    if: commit_message !~ /(no-coverage|no-test)/
     go: stable
     script:
     - GO111MODULE=off go get github.com/mattn/goveralls
