@@ -11,8 +11,8 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/alecthomas/kingpin/v2"
 	"github.com/olekukonko/tablewriter"
-	"gopkg.in/alecthomas/kingpin.v2"
 )
 
 const version = "2.2.3"
